@@ -73,6 +73,12 @@ string bioAnswers[4][7][3]
 	},
 
 	{
-
+		{"Part of the earth water and atmosphere which inhabits living organism","Part of the soil where animals and plants are found","Atmosphere in which life exists"},
+		{"Lithosphere","Atmosphere","All the above"},
+		{"Lithosphere","Hydrosphere","Atmosphere"},
+		{"Geotropism","Climatic factors","Precipitation"},
+		{"Carbon cycle","Nitrogen cycle","Hydrological cycle"},
+		{"Lightening","Free living nitrogen fixing bacteria","All the above"},
+		{"Floods","Crop residue","Microbial activity"}
 	},
 }
