@@ -81,4 +81,14 @@ string bioAnswers[4][7][3]
 		{"Lightening","Free living nitrogen fixing bacteria","All the above"},
 		{"Floods","Crop residue","Microbial activity"}
 	},
-}
+
+	{
+		{"By gas exchange in the lungs","By gas exchange in the kidneys","By gas exchange in the liver"},
+		{"35 Celsius","37 Celsius","39 Celsius"},
+		{"In the brain","In the skin","In the liver"},
+		{"Sweat is cool so it cools us down","As sweat evaporates it removes heat from the skin","It carries heat from one part of the body to another"},
+		{"Arterioles become wider, increasing the flow of blood in the skin capillaries","Arterioles become narrower, decreasing the flow of blood in the skin capillaries","Arterioles become narrower, increasing the flow of blood in the skin capillaries"},
+		{"Negative","Positive","Neutral"},
+		{"Type 1 is caused by the failure to produce insulin","Type 1 is caused by the failure to produce glucose","Type 2 is caused by the failure to produce insulin"}
+	}
+};
