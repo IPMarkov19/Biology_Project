@@ -48,4 +48,21 @@ string bioQuestions[4][7]
 		"What type of feedback is involved in thermoregulation?",
 		"Which statement about diabetes is correct?"
 	}
+};
+
+string bioAnswers[4][7][3]
+{
+	{
+		{"Biodiversity","Characteristics","Variation"},
+		{"Phenotype","Genotype","Variation"},
+		{"As a result of environmental changes","They inherit it from their offspring","They inherit it from their parents"},
+		{"It decreases the variation in a population","It has no effect on the variation in a population","It increases the variation in a population"},
+		{"One from each parent","One from their father or one from their mother","Two from each parent"},
+		{"Uracil","Phosphate","Thymine"},
+		{"AA and 00","A0 and A0","A0 and 00"}
+	},
+
+	{
+
+	},
 }
