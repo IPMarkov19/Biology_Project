@@ -141,6 +141,11 @@
   <ItemGroup>
     <ClCompile Include="BiologyProject.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BiologyData\BiologyData.vcxproj">
+      <Project>{88c0e180-05d3-4c94-ac0d-f14725d4ce34}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
