@@ -63,6 +63,16 @@ string bioAnswers[4][7][3]
 	},
 
 	{
+		{"Cell membranes and cell walls","Cell walls and ribosomes","Ribosomes and cell membranes"},
+		{"Chloroplasts","Mitochondria","Nuclei"},
+		{"Supporting the cell","Controlling the entry and exit of materials","Storing water"},
+		{"Carbon dioxide","Protein","Sugar"},
+		{"Proteins","Lipids","DNA"},
+		{"Cell membrane","Cell membrane and cell wall","Cell wall"},
+		{"Cell membrane","Cell wall","DNA"}
+	},
+
+	{
 
 	},
 }
