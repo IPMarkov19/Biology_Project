@@ -3,6 +3,6 @@
 void mainMenu();
 void info();
 void title();
-void selectedOption(int currentPosition, int nextPosition);
-void color(int color);
+void selectedOption(int position, int nextPosition);
+void setColor();
 void menu();

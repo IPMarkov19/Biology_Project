@@ -7,6 +7,7 @@ using namespace std;
 
 int counter = 0;
 
+
 int checkKeyPressed()
 {
     char key;
@@ -57,13 +58,21 @@ void menu()
 
         keyPressed = _getch();
 
-        if (keyPressed == 80 && (position >= 1 && position < 4))
+        if (keyPressed == 80 )
         {
             position++;
+            if (position == 4)
+            {
+                position = 1;
+            }
         }
-        else if (keyPressed == 72 && (position >= 2 && position <= 5))
+        else if (keyPressed == 72 )
         {
             position--;
+            if (position == 0)
+            {
+                position = 3;
+            }
         }
         else
         {
@@ -162,23 +171,23 @@ void info()
     cout << setw(131) << "Thank you for using our app!" << endl << endl;
 
     cout << endl << endl << endl << endl;
-    cout << setw(145) << "Do you want to go back to the menu? - Y/N" << endl;
+    cout << setw(160) << "If you wnat to go back to the menu press the ~ESC~ button. Press any other key to quit." << endl;
 
-    char answer;
+    int answer;
     bool valid = false;
 
     while (valid == false)
     {
-        cin >> answer;
+        answer = _getch();
 
-        if (answer == 'Y' || answer == 'y')
+        if (answer==27)
         {
             system("CLS");
             mainMenu();
             valid = true;
         }
 
-        else if (answer == 'N' || answer == 'n')
+        else
         {
             system("CLS");
             cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
@@ -192,32 +201,22 @@ void info()
             valid = true;
             counter = 0;
         }
-
-        else
-        {
-            system("CLS");
-            cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
-            cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
-            cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
-            cout << endl << "You entered an invalid statement. Please try again." << endl;
-            valid = false;
-        }
     }
 }
 
 
 
-void color(int color)
+void setColor()
 {
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+    HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(color, 2);
 }
 
-void selectedOption(int currentPosition, int nextPosition)
+void selectedOption(int position,int nextPosition)
 {
-    if (currentPosition == nextPosition)
+    if (position == nextPosition)
     {
         cout << setw(118) << "--->>  ";
-
     }
     else
     {
