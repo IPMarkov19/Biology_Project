@@ -71,3 +71,27 @@ void printBiosphereTheme()
 	cout << "Since life exists on the ground, in the air, and in the water, the biosphere overlaps all these spheres." << endl;
 	cout << "Although the biosphere measures about 20 kilometers (12 miles) from top to bottom, almost all life exists between about 500 meters (1,640 feet) below the ocean’s surface to about 6 kilometers (3.75 miles) above sea level." << endl;
 }
+
+void printHomeostasis()
+{
+	cout << "=    =    ========    ==      ==    =======    ========    =======    =========        ==        =======     =    =======" << endl;
+	cout << "=    =    =      =    = =    = =    =          =      =    =              =		   =  =       =                =      " << endl;
+	cout << "=    =    =      =    =  =  =  =    ======     =      =      ===          =		  =    =        ===       =      ===  " << endl;
+	cout << "======    =      =    =   ==   =    =			=      =          =        =		 ========           =     =          =" << endl;
+	cout << "=    =    =      =    =        =    =			=      =          =        =		=        =          =     =          =" << endl;
+	cout << "=    =    ========    =        =    =======	========    =======        =	   =          =   =======     =    =======" << endl;
+
+	cout << endl;
+
+	cout << "Homeostasis" << endl;
+	cout << "The conditions inside our body must be very carefully controlled if the body is to function effectively. Homeostasis is the maintenance of a constant internal environment." << endl;
+	cout << "The nervous system and hormones are responsible for this." << endl;
+	cout << "One example of homeostasis is the concentration of carbon dioxide in the blood being carefully controlled. Here are some of the other internal conditions that are regulated:" << endl;
+	cout << "Body temperature" << endl;
+	cout << "This is controlled to maintain the temperature at which the body’s enzymes work best, which is usually 37°C." << endl;
+	cout << "Blood sugar level" << endl;
+	cout << "This is controlled to provide cells with a constant supply of glucose for respiration. It is controlled by the release and storage of glucose, which is in turn controlled by insulin." << endl;
+	cout << "Water content" << endl;
+	cout << "This is controlled to protect cells by stopping too much water from entering or leaving them. Water content is controlled by water loss from:" << endl;
+	cout << "the lungs - when we exhale, the skin - by sweating, the body - in urine produced by the kidneys" << endl;
+}
