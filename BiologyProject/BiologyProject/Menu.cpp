@@ -3,6 +3,8 @@
 #include <iomanip>
 #include <conio.h>
 #include "menu.h"
+#include "../BiologyData/Functions.h"
+
 using namespace std;
 
 int counter = 0;

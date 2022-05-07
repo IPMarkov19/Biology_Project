@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void printGeneticsTheme()
+void printGeneticsTheme(int a)
 {
 	cout <<"  ========    =======    ==     =    =======    =========    =    =======    =======" << endl;
 	cout <<"  =           =		     = =    =    =              =             =			 =      " << endl;
@@ -20,10 +20,24 @@ void printGeneticsTheme()
 	cout << "The version of a characteristic shown by an individual is called its phenotype." << endl;
 	cout << "Organisms that carry out sexual reproduction are able to combine different forms of genes from two parents, which increases variation in their offspring." << endl;
 	cout <<	"A phenotype is an inherited characteristic.The phenotype of every individual is due to the genes they inherited from their parents."<< endl;
+	
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << "Do you want to attempt the test? (1/0) ";
+
+	int attemptChoice;
+	cin >> attemptChoice;
+
+	if (attemptChoice == 1)
+	{
+		system("CLS");
+		printTest(a);
+	}
 }
 
 
-void printCellStructureTheme()
+void printCellStructureTheme(int a)
 {
 	cout << "=======    =======    =          =      " << endl;
 	cout << "=          =          =          =      " << endl;
@@ -54,9 +68,23 @@ void printCellStructureTheme()
 	cout << "A yeast is a unicellular fungus. Bacterial cells have a more simple structure compared to animal, plant and fungal cells and are usually much smaller." << endl;
 	cout << "They still have a cell membrane and ribosomes, but they lack organelles such as the nucleus. " << endl;
 	cout << "However, bacteria still have DNA, including extra circular pieces of DNA called plasmids.Their cell wall is made of a diffferent material and has a different structure to those of plant and fungal cells." << endl;
+	
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << "Do you want to attempt the test? (1/0) ";
+
+	int attemptChoice;
+	cin >> attemptChoice;
+
+	if (attemptChoice == 1)
+	{
+		system("CLS");
+		printTest(a);
+	}
 }
 
-void printBiosphereTheme()
+void printBiosphereTheme(int a)
 {
 	cout << "===      =    ======    =======    ======     =     =    =======    =====     =======" << endl;
 	cout << "=  =          =    =    =          =     =    =     =    =          =    =    =      " << endl;
@@ -71,9 +99,23 @@ void printBiosphereTheme()
 	cout << "Scientists describe the Earth in terms of spheres. The solid surface layer of the Earth is the lithosphere. The atmosphere is the layer of air that stretches above the lithosphere. The Earth’s water—on the surface, in the ground, and in the air—makes up the hydrosphere." << endl;
 	cout << "Since life exists on the ground, in the air, and in the water, the biosphere overlaps all these spheres." << endl;
 	cout << "Although the biosphere measures about 20 kilometers (12 miles) from top to bottom, almost all life exists between about 500 meters (1,640 feet) below the ocean’s surface to about 6 kilometers (3.75 miles) above sea level." << endl;
+	
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << "Do you want to attempt the test? (1/0) ";
+
+	int attemptChoice;
+	cin >> attemptChoice;
+
+	if (attemptChoice == 1)
+	{
+		system("CLS");
+		printTest(a);
+	}
 }
 
-void printHomeostasis()
+void printHomeostasis(int a)
 {
 	cout << "=    =    ========    ==      ==    =======    ========    =======    =========        ==        =======     =    =======" << endl;
 	cout << "=    =    =      =    = =    = =    =          =      =    =              =		   =  =       =                =      " << endl;
@@ -95,8 +137,22 @@ void printHomeostasis()
 	cout << "Water content" << endl;
 	cout << "This is controlled to protect cells by stopping too much water from entering or leaving them. Water content is controlled by water loss from:" << endl;
 	cout << "the lungs - when we exhale, the skin - by sweating, the body - in urine produced by the kidneys" << endl;
-}
 
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << "Do you want to attempt the test? (1/0) ";
+	
+	int attemptChoice;
+	cin >> attemptChoice;
+
+	if (attemptChoice == 1)
+	{
+		system("CLS");
+		printTest(a);
+	}
+	
+}
 
 void congratsScale(int points)
 {
@@ -117,6 +173,9 @@ void congratsScale(int points)
 		cout << "Perfect score! You've got " << points << " out of 7";
 	}
 }
+
+
+
 void printTest(int theme)
 {
 	int points = 0;
@@ -153,4 +212,31 @@ void printTest(int theme)
 	}
 
 	congratsScale(points);
+}
+
+
+void startMenu()
+{
+	for (int i = 0; i < 4; i++)
+	{
+		cout <<i+1<<"." << bioThemes[i] << endl;
+	}
+	cout << endl;
+	cout << endl;
+	cout << endl;
+
+	cout << "Please select the theme you want to study (1-4)." << endl;
+
+	int themeChoice;
+
+	cin >> themeChoice;
+	themeChoice--;
+
+	switch (themeChoice)
+	{
+		case 0: printGeneticsTheme(themeChoice);
+		case 1: printCellStructureTheme(themeChoice);
+		case 2: printBiosphereTheme(themeChoice);
+		case 3: printHomeostasis(themeChoice);
+	}
 }
