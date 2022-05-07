@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Projects\Biology project\Biology_Project\BiologyProject\x64\Debug\BiologyData.exe</FullPath>
+      <FullPath>C:\Users\tosma\source\repos\Biology_Project\BiologyProject\x64\Debug\BiologyData.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Projects\Biology project\Biology_Project\BiologyProject\x64\Debug\BiologyProject.exe</FullPath>
+      <FullPath>C:\Users\tosma\source\repos\Biology_Project\BiologyProject\x64\Debug\BiologyProject.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
