@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Data.h"
 
 using namespace std;
 
@@ -94,4 +95,62 @@ void printHomeostasis()
 	cout << "Water content" << endl;
 	cout << "This is controlled to protect cells by stopping too much water from entering or leaving them. Water content is controlled by water loss from:" << endl;
 	cout << "the lungs - when we exhale, the skin - by sweating, the body - in urine produced by the kidneys" << endl;
+}
+
+
+void congratsScale(int points)
+{
+	if (points == 0)
+	{
+		cout << "Did you even study? You've got " << points << " out of 7!";
+	}
+	else if (points > 0 and points <= 3)
+	{
+		cout << "You need to study more. You've got " << points << " out of 7!";
+	}
+	else if (points > 3 and points < 6)
+	{
+		cout << "Good one! You've got " << points << " out of 7";
+	}
+	else
+	{
+		cout << "Perfect score! You've got " << points << " out of 7";
+	}
+}
+void printTest(int theme)
+{
+	int points = 0;
+
+	for (int i = 0; i < 7; i++)
+	{
+		cout<< i+1<<"." << bioQuestions[theme][i] << endl;
+		cout << endl;
+
+		cout << "1." << bioAnswers[theme][i][0] << "    2." << bioAnswers[theme][i][1] << endl;;
+		cout << "3." << bioAnswers[theme][i][2]<< endl;
+
+		int choice;
+
+		cin >> choice;
+
+		if (choice < 1 or choice > 3)
+		{
+			while (choice != 1 or choice != 2 or choice != 3)
+			{
+				cout << "Incorrect choice! Please answer from 1 to 3." << endl;
+				cin >> choice;
+			}
+		}
+		else
+		{
+			if (rightAnswers[theme][i] == choice - 1)
+			{
+				points++;
+			}
+		}
+
+		cout << system("CLS");
+	}
+
+	congratsScale(points);
 }
