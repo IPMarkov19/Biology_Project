@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Data.h"
+#include "../BiologyProject/Menu.h"
 
 using namespace std;
 
@@ -152,6 +153,11 @@ void printHomeostasis(int a)
 		system("CLS");
 		printTest(a);
 	}
+	else if (attemptChoice==0)
+	{
+		system("CLS");
+		mainMenu();
+	}
 	
 }
 
@@ -163,6 +169,10 @@ void congratsScale(int points)
 		cout << "Did you even study? You've got " << points << " out of 7!";
 		cout << endl;
 		cout << endl;
+
+		system("pause");
+		system("CLS");
+		mainMenu();
 	}
 	else if (points > 0 and points <= 3)
 	{
@@ -170,6 +180,10 @@ void congratsScale(int points)
 		cout << "You need to study more. You've got " << points << " out of 7!";
 		cout << endl;
 		cout << endl;
+
+		system("pause");
+		system("CLS");
+		mainMenu();
 	}
 	else if (points > 3 and points < 6)
 	{
@@ -177,6 +191,10 @@ void congratsScale(int points)
 		cout << "Good one! You've got " << points << " out of 7";
 		cout << endl;
 		cout << endl;
+
+		system("pause");
+		system("CLS");
+		mainMenu();
 	}
 	else
 	{
@@ -184,6 +202,10 @@ void congratsScale(int points)
 		cout << "Perfect score! You've got " << points << " out of 7";
 		cout << endl;
 		cout << endl;
+
+		system("pause");
+		system("CLS");
+		mainMenu();
 	}
 }
 
