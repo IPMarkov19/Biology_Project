@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="BiologyProject.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="RegisterAndLoginForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BiologyData\BiologyData.vcxproj">
@@ -149,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="RegisterAndLoginForm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

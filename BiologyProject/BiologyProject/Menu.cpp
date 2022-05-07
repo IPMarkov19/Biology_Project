@@ -4,6 +4,7 @@
 #include <conio.h>
 #include "menu.h"
 #include "../BiologyData/Functions.h"
+#include "RegisterAndLoginForm.h"
 
 using namespace std;
 
@@ -84,9 +85,6 @@ void menu()
 
     if (position == 1)
     {
-        //system("CLS");  
-          //Bioapp();
-
         startMenu();
     }
 
@@ -134,7 +132,7 @@ void mainMenu()
             system("CLS");
             title();
             cout << endl << endl << endl;
-            cout << setw(140) << "PRESS ANY BUTTON OTHER THEN ~ENTER~ TO CONTINUE...";
+            loginMenu();
             if (checkKeyPressed() != 13)
             {
                 break;
