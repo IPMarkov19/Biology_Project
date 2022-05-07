@@ -92,3 +92,12 @@ string bioAnswers[4][7][3]
 		{"Type 1 is caused by the failure to produce insulin","Type 1 is caused by the failure to produce glucose","Type 2 is caused by the failure to produce insulin"}
 	}
 };
+
+
+int rightAnswers[4][7]
+{
+	{2,0,2,2,0,0,2},
+	{2,0,1,1,2,2,1},
+	{0,2,0,2,2,2,2},
+	{0,1,0,1,0,0,0}
+};
