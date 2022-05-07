@@ -139,9 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BiologyData.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Data.h" />
     <ClInclude Include="Functions.h" />
   </ItemGroup>

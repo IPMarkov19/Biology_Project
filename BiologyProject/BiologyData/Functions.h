@@ -4,15 +4,16 @@
 
 using namespace std;
 
+void printTest(int theme);
 
 void printGeneticsTheme(int a)
 {
-	cout <<"  ========    =======    ==     =    =======    =========    =    =======    =======" << endl;
-	cout <<"  =           =		     = =    =    =              =             =			 =      " << endl;
-	cout <<"  =           ======	 =  =   =    ======         =        =	  =            ===  " << endl;
-	cout <<"  =    ===    =			 =   =  =    =              =        =    =				   =" << endl;
-	cout <<"  =      =    =			 =    = =    =              =        =    =                =" << endl;
-	cout <<"  ========    =======	 =     ==    =======        =        =    =======    =======" << endl;
+	cout <<"  ========    =======    ==     =    =======    =========    =    =======    =======   " << endl;
+	cout <<"  =           =          = =    =    =              =             =          =         " << endl;
+	cout <<"  =           ======     =  =   =    ======         =        =	  =            ===     " << endl;
+	cout <<"  =    ===    =          =   =  =    =              =        =    =                =   " << endl;
+	cout <<"  =      =    =          =    = =    =              =        =    =                =   " << endl;
+	cout <<"  ========    =======    =     ==    =======        =        =    =======    =======   " << endl;
 
 	cout << endl;
 
@@ -158,19 +159,31 @@ void congratsScale(int points)
 {
 	if (points == 0)
 	{
+		cout << endl;
 		cout << "Did you even study? You've got " << points << " out of 7!";
+		cout << endl;
+		cout << endl;
 	}
 	else if (points > 0 and points <= 3)
 	{
+		cout << endl;
 		cout << "You need to study more. You've got " << points << " out of 7!";
+		cout << endl;
+		cout << endl;
 	}
 	else if (points > 3 and points < 6)
 	{
+		cout << endl;
 		cout << "Good one! You've got " << points << " out of 7";
+		cout << endl;
+		cout << endl;
 	}
 	else
 	{
+		cout << endl;
 		cout << "Perfect score! You've got " << points << " out of 7";
+		cout << endl;
+		cout << endl;
 	}
 }
 
@@ -217,6 +230,8 @@ void printTest(int theme)
 
 void startMenu()
 {
+	system("CLS");
+
 	for (int i = 0; i < 4; i++)
 	{
 		cout <<i+1<<"." << bioThemes[i] << endl;
@@ -232,11 +247,22 @@ void startMenu()
 	cin >> themeChoice;
 	themeChoice--;
 
-	switch (themeChoice)
+	system("CLS");
+
+	if (themeChoice == 0)
 	{
-		case 0: printGeneticsTheme(themeChoice);
-		case 1: printCellStructureTheme(themeChoice);
-		case 2: printBiosphereTheme(themeChoice);
-		case 3: printHomeostasis(themeChoice);
+		printGeneticsTheme(themeChoice);
+	}
+	else if (themeChoice == 1)
+	{
+		printCellStructureTheme(themeChoice);
+	}
+	else if (themeChoice == 2)
+	{
+		printBiosphereTheme(themeChoice);
+	}
+	else if (themeChoice == 3)
+	{
+		printHomeostasis(themeChoice);
 	}
 }

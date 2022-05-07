@@ -86,6 +86,8 @@ void menu()
     {
         //system("CLS");  
           //Bioapp();
+
+        startMenu();
     }
 
     if (position == 2)
