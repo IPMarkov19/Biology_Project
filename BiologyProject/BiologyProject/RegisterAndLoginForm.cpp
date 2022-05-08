@@ -7,7 +7,7 @@
 #include "Menu.h"
 using namespace std;
 
-void login()
+void login() //Function for the login page
 {
 	int count = 0;
 	string userID;
@@ -59,7 +59,7 @@ void login()
 		loginMenu();
 	}
 }
-void registration()
+void registration() //Function for the registration page
 {
 	string rUserID;
 	string rPassword;
@@ -89,7 +89,7 @@ void registration()
 	system("CLS");
 	loginMenu();
 }
-void forgotPassword()
+void forgotPassword() //Function for password page
 {
 	int option;
 	system("CLS");
@@ -163,7 +163,7 @@ void forgotPassword()
 		break;
 	}
 }
-void loginMenu()
+void loginMenu() //Function for login menu page
 {
 	int position = 1;
 	int keyPressed = 0;
@@ -238,7 +238,7 @@ void loginMenu()
 	}
 }
 
-void selectedOption2(int position, int nextPosition)
+void selectedOption2(int position, int nextPosition) //Function for the pointer for the menu
 {
 	if (position == nextPosition)
 	{

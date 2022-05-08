@@ -7,7 +7,7 @@ using namespace std;
 
 void printTest(int theme);
 
-void printGeneticsTheme(int a)
+void printGeneticsTheme(int a) //Function for the genetics page
 {
 	cout << R"(
 
@@ -49,7 +49,7 @@ void printGeneticsTheme(int a)
 }
 
 
-void printCellStructureTheme(int a)
+void printCellStructureTheme(int a) //Function for the cell page
 {
 	cout << R"(
          ________  _______   ___       ___          
@@ -100,7 +100,7 @@ void printCellStructureTheme(int a)
 	}
 }
 
-void printBiosphereTheme(int a)
+void printBiosphereTheme(int a) //Function for the biosphere page
 {
 	cout << R"(
 	
@@ -135,7 +135,7 @@ void printBiosphereTheme(int a)
 	}
 }
 
-void printHomeostasis(int a)
+void printHomeostasis(int a) //Function for the homeostasis page
 {
 	cout <<R"(
      __  __     ______     __    __     ______     ______     ______     ______   ______     ______     __     ______    
@@ -181,7 +181,7 @@ void printHomeostasis(int a)
 	
 }
 
-void congratsScale(int points)
+void congratsScale(int points) //Function for the congrats scale
 {
 	if (points == 0)
 	{

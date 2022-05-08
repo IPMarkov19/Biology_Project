@@ -11,7 +11,7 @@ using namespace std;
 int counter = 0;
 
 
-int checkKeyPressed()
+int checkKeyPressed() //Function to check if any key is pressed
 {
     char key;
     int asciiValue;
@@ -23,7 +23,7 @@ int checkKeyPressed()
     }
 }
 
-void title()
+void title() //Function for the welcome ascii art
 {
     cout << endl << endl << endl << endl << endl;
     cout << R"(
@@ -40,7 +40,7 @@ void title()
 	)" << endl;
 }
 
-void menu()
+void menu() //Function for the menu after you login
 {
     int position = 1;
     int keyPressed = 0;
@@ -154,7 +154,7 @@ void mainMenu()
     menu();
 
 }
-void info()
+void info() //Function for the info page
 {
     system("CLS");
     cout << setw(4) << endl;
@@ -209,7 +209,7 @@ void info()
     }
 }
 
-void selectedOption1(int position,int nextPosition)
+void selectedOption1(int position,int nextPosition) //Function for the pointer for the menu
 {
     if (position == nextPosition)
     {
