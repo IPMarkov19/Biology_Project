@@ -27,8 +27,8 @@
 - Georgi Milev - [GNMilev19](https://github.com/GNMilev19) - QA Engineer
 
 #  How to install⚙️ <a name = "installation"></a>
-Go to [This link](https://codeload.github.com/IPMarkov19/Biology_Project/zip/refs/heads/main?token=APGEKV3V66O7JSRMS54QNQ3CO6IZE) and download the last release.
-Unzip and open the folder open the folder BiologyProject. Then open Biologyproject.sln. Then run the console and you are ready to go.
+Clone this link https://github.com/IPMarkov19/Biology_Project.git using command prompt.
+Open the folder BiologyProject. Then open BiologyProject.sln. Then run the console and you are ready to go.
 
 # Resume of the poject 💻 <a name = "resume"></a>
 
