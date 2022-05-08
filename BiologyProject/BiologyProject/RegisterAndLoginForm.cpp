@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <conio.h>
 #include <string>
 #include "RegisterAndLoginForm.h"
 #include "Menu.h"
@@ -164,27 +165,87 @@ void forgotPassword()
 }
 void loginMenu()
 {
-	int choice;
-	cout << setw(145) << "______________________________________________\n\n\n";
-	cout << setw(145) << "       Welcome to Login & Register page       \n\n\n";
-	cout << setw(144) << "_______________      MENU      _______________\n\n";
-	cout << setw(145) << "                                                     \n\n";
-	cout << setw(139) << "| Press 1 to LOGIN                    |" << endl;
-	cout << setw(139) << "| Press 2 to REGISTER                 |" << endl;
-	cout << setw(139) << "| Press 3 if you forgot your PASSWORD |" << endl;
-	cout << setw(139) << "| Press 4 to EXIT                     |" << endl;
-	cout << endl;
-	cout << setw(132) << " Plese enter your choice : ";
-	cin >> choice;
-	cout << endl;
+	int position = 1;
+	int keyPressed = 0;
 
-
-	switch (choice)
+	while (keyPressed != 13)
 	{
-	case 1:  login(); break;
-	case 2: registration(); break;
-	case 3: forgotPassword(); break;
-	case 4: exit(0); break;
-	default: system("CLS"); loginMenu();
+		system("CLS");
+		title();
+		cout << endl << endl << endl;
+		cout << setw(145) << "______________________________________________\n\n\n";
+		cout << setw(145) << "       Welcome to Login & Register page       \n\n\n";
+		cout << setw(144) << "_______________      MENU      _______________\n\n";
+		cout << setw(145) << "                                                     \n\n";
+		selectedOption2(1, position); cout << "|       LOGIN       |" << endl;
+		selectedOption2(2, position); cout << "|      REGISTER     |" << endl;
+		selectedOption2(3, position); cout << "|      PASSWORD     |" << endl;
+		selectedOption2(4, position); cout << "|        EXIT       |" << endl;
+		cout << endl;
+		cout << endl;
+
+		keyPressed = _getch();
+
+		if (keyPressed == 80)
+		{
+			position++;
+			if (position == 5)
+			{
+				position = 1;
+			}
+		}
+		else if (keyPressed == 72)
+		{
+			position--;
+			if (position == 0)
+			{
+				position = 4;
+			}
+		}
+		else
+		{
+			position = position;
+		}
+	}
+
+	if (position == 1)
+	{
+		login();
+	}
+
+	if (position == 2)
+	{
+		system("CLS");
+		registration();
+	}
+
+	if (position == 3)
+	{
+		system("CLS");
+		forgotPassword();
+	}
+
+	if (position == 4)
+	{
+		system("CLS");
+		cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+		cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+		cout << setw(145) << "Thank you for using our app! We hope you had a great experience!";
+		cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+		cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+		cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+		exit(0);
+	}
+}
+
+void selectedOption2(int position, int nextPosition)
+{
+	if (position == nextPosition)
+	{
+		cout << setw(108) << "--->>  ";
+	}
+	else
+	{
+		cout << setw(108) << "       ";
 	}
 }

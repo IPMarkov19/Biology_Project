@@ -53,9 +53,9 @@ void menu()
         cout << setw(130) << "--------------------" << endl;
 
 
-        selectedOption(1, position); cout /*<< setw(123)*/ << "START" << endl;
-        selectedOption(2, position); cout /*<< setw(122)*/ << "INFO" << endl;
-        selectedOption(3, position);  cout /*<< setw(122)*/ << "EXIT" << endl;
+        selectedOption1(1, position); cout << "START" << endl;
+        selectedOption1(2, position); cout << "INFO" << endl;
+        selectedOption1(3, position);  cout << "EXIT" << endl;
         cout << endl;
 
 
@@ -206,7 +206,7 @@ void info()
     }
 }
 
-void selectedOption(int position,int nextPosition)
+void selectedOption1(int position,int nextPosition)
 {
     if (position == nextPosition)
     {
