@@ -206,14 +206,6 @@ void info()
     }
 }
 
-
-
-void setColor()
-{
-    HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(color, 2);
-}
-
 void selectedOption(int position,int nextPosition)
 {
     if (position == nextPosition)
